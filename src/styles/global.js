@@ -11,30 +11,25 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: ${({ theme }) => theme.primaryLight};
     color: ${({ theme }) => theme.primaryDark};
-    height: 100vh;
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
   }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
 
   img {
     border-radius: 5px;
     height: auto;
     width: 10rem;
-  }
-
-  div {
-    text-align: center;
   }
 
   small {
@@ -44,5 +39,8 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.primaryHover};
     text-decoration: none;
+  }
+  span {
+    font-size: 4.8rem;
   }
 `;

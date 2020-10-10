@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const StyledBurger = styled.button`
 	position: absolute;
 	top: 5%;
-	right: 2rem;
+	right: 3rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	width: 2rem;
+	justify-content: space-between;
+	width: 4rem;
 	height: 2rem;
 	background: transparent;
 	border: none;
@@ -16,8 +16,8 @@ export const StyledBurger = styled.button`
 	z-index: 10;
 
 	span {
-		width: 2rem;
-		height: 0.25rem;
+		width: 2.5rem;
+		height: 0.4rem;
 		background: ${({ theme, open }) =>
 			open ? theme.primaryLight : theme.primaryDark};
 		/* border-radius: 10px; */
